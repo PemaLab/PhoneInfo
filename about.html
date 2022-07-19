@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!--iPhone, Logo, and Toggles-->
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/images/LOGO.png" alt="About Us Background"></a>     
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><form action="https://www.google.com/search" method="get" class="searchbar">
+                        <input type="text" placeholder="Search">
+                        <button type="button"class="submit"><img src="/images/search.png" alt="SubmitButton"></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!---About Us Page-->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>Largest collection of information regarding smart-phones.</h1>
+                <p>We are a company partnered with over 10 
+                biggest in the World - including Apple, Samsung, Google, 
+                Nokia, Asus, etc.</p>
+                <a href="" class="hero-btn">Explore More</a>
+            </div>
+            <div class="about-col">
+                <img src="/images/all in one.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="test">
+        <img src="/images/about.jpeg" alt="">
+    </section>
+
+    <!---Footer--->
+
+    <section class="footer">
+        <div class="footer-content">
+            <div class="company-policies">
+                <ul>
+                    <li><a href="">Privacy Policy   |   </a></li>
+                    <li><a href="">Terms of Use    |   </a></li>
+                    <li><a href="">SiteMap</a></li>
+                </ul>            
+                <br>
+                <p>Copyright &copy; 2022 Phones Inc. All rights reserved.</p>
+            </div>
+            <div class="footer-follow">
+                <h4>Follow us </h4>
+                <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                </div>
+                <p>Made with <i class="fa fa-heart-o"></i> by <a href="/images/me.JPG">Pema Tamang</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

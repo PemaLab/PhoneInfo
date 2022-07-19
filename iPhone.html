@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-
+awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-------------------iPhone, Logo, and Toggles------------------->
+<body>
+    <section class="iPhone-page">
+        <nav>
+            <a href="index.html"><img src="/images/LOGO.png" alt="iPhone Page"></a>     
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><form action="https://www.google.com/search" method="get" class="searchbar">
+                        <input type="text" placeholder="Search">
+                        <button type="button"class="submit"><img src="/images/search.png" alt="SubmitButton"></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="iPhone-compare">
+        <h1>Compare iPhone Models</h1>
+        <div class="iPhone-content">
+            <a href="">See all models ></a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://www.apple.com" target="blank" rel="noopener noreferrer">Shop iPhone at Apple></a>
+            <p>Get help choosing.</p><a href="">Chat with a Specialist</a>
+        </div>    
+        <div class="iPhone-select-dropdown">
+            <label for="base">Base</label>
+            <select class="base" id="base">
+                <optgroup label="iPhone Base Models">
+                    <option value="iPhone-13">iPhone 13</option>
+                    <option value="iPhone-12">iPhone 12</option>
+                    <option value="iPhone-11">iPhone 11</option>
+                    <option value="iPhone-X">iPhone X</option>
+                    <option value="iPhone-8">iPhone 8</option>
+                    <option value="iPhone-7">iPhone 7</option>
+                </optgroup>
+            </select>
+            <label for="pro">Pro</label>
+            <select class="pro" id="pro">
+                <optgroup label="iPhone Pro Models">
+                    <option value="iPhone-13-pro">iPhone 13 Pro</option>
+                    <option value="iPhone-12-pro">iPhone 12 Pro</option>
+                    <option value="iPhone-11-pro">iPhone 11 Pro</option>
+                    <option value="iPhone-X-pro">iPhone X Pro</option>
+                    <option value="iPhone-8-pro">iPhone 8 Pro</option>
+                    <option value="iPhone-7-pro">iPhone 7 Pro</option>
+                </optgroup>    
+            </select>
+            <label for="max">Max</label>
+            <select class="max" id="max">
+                <optgroup label="iPhone Pro-Max Models">
+                    <option value="iPhone-13-pro-max">iPhone 13 Pro Max</option>
+                    <option value="iPhone-12-pro-max">iPhone 12 Pro Max</option>
+                    <option value="iPhone-11-pro-max">iPhone 11 Pro Max</option>
+                    <option value="iPhone-X-pro-max">iPhone X Pro Max</option>
+                    <option value="iPhone-8-pro-max">iPhone 8 Pro Max</option>
+                    <option value="iPhone-7-pro-max">iPhone 7 Pro Max</option>
+                </optgroup>
+            </select>
+        </div>
+    </section>
+    <section class="colornav">
+            <div class="colornav-buttons">
+                <ul role="list"class="colornav-items">
+                    <li class="colornav-item">
+                        <button class="colornav-link">
+                            <figure class="colornav-swatch colornav-swatch-Green">
+                                <figcaption class="colornav-label">AlpineGreen</figcaption>
+                            </figure>
+                        </button>
+                    </li>
+                    <li class="colornav-item">
+                        <button class="colornav-link">
+                            <figure class="colornav-swatch colornav-swatch-Green">
+                                <figcaption class="colornav-label">Silver</figcaption>
+                            </figure>
+                        </button>
+                    </li>
+                    <li class="colornav-item">
+                        <button class="colornav-link">
+                            <figure class="colornav-swatch colornav-swatch-Green">
+                                <figcaption class="colornav-label">Gold</figcaption>
+                            </figure>
+                        </button>
+                    </li><li class="colornav-item">
+                        <button class="colornav-link">
+                            <figure class="colornav-swatch colornav-swatch-Green">
+                                <figcaption class="colornav-label">Graphite</figcaption>
+                            </figure>
+                        </button>
+                    </li><li class="colornav-item">
+                        <button class="colornav-link">
+                            <figure class="colornav-swatch colornav-swatch-Green">
+                                <figcaption class="colornav-label">SierraBlue</figcaption>
+                            </figure>
+                        </button>
+                    </li>
+                </ul>
+            </div>    
+    </section>
+
+    <!-----------------Footer------------------------>
+
+
+    <section class="footer">
+        <div class="footer-content">
+            <div class="company-policies">
+                <ul>
+                    <li><a href="">Privacy Policy   |   </a></li>
+                    <li><a href="">Terms of Use    |   </a></li>
+                    <li><a href="">SiteMap</a></li>
+                </ul>            
+                <br>
+                <p>Copyright &copy; 2022 Phones Inc. All rights reserved.</p>
+            </div>
+            <div class="footer-follow">
+                <h4>Follow us </h4>
+                <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                </div>
+                <p>Made with <i class="fa fa-heart-o"></i> by <a href="/images/me.JPG">Pema Tamang</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-----------------JavaScript for Toggle Menu------------------------>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px"
+            }
+        </script>
+
+    <!-----------------JavaScript for Color Navigation------------------------>
+    
+</body>
+</html>
