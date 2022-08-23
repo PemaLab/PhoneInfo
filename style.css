@@ -10,7 +10,7 @@
       rgba(118, 128, 161, 0.7),
       rgba(119, 127, 157, 0.7)
     ),
-    url(/PhoneInfo/images/iPhone.png);
+    url(/images/iPhone.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -185,7 +185,7 @@ nav .fa {
       rgba(118, 128, 161, 0.7),
       rgba(119, 127, 157, 0.7)
     ),
-    url(/PhoneInfo/images/samsung.jpeg);
+    url(/images/samsung.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -233,7 +233,7 @@ nav .fa {
       rgba(118, 128, 161, 0.7),
       rgba(119, 127, 157, 0.7)
     ),
-    url(/PhoneInfo/images/ROGPhone3.jpeg);
+    url(/images/ROGPhone3.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -281,7 +281,7 @@ nav .fa {
       rgba(118, 128, 161, 0.7),
       rgba(119, 127, 157, 0.7)
     ),
-    url(/PhoneInfo/images/about.png);
+    url(/images/about.png);
   background-position: center;
   background-size: cover;
   color: #fff;
