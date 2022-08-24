@@ -129,26 +129,33 @@ nav .fa {
 
 /*---------------------Smaller Devices View--------------------*/
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 850px) {
+  nav {
+    margin: 0;
+    padding: 0;
+  }
   nav img {
-    width: 110px;
-    height: 130px;
-  }
-  .text-box p {
-    font-size: 14px;
-    color: #fff;
-  }
-  .samsung-explore-box p {
-    font-size: 20px;
-    color: #fff;
-  }
-  .rog-explore-box p {
-    font-size: 20px;
-    color: #fff;
+    width: 80px;
+    height: 100px;
   }
   .nav-links ul li a {
     font-size: 20px;
     display: block;
+    margin-left: -10px;
+  }
+  .searchbar {
+    width: 150px;
+    left: -10%;
+    height: auto;
+    position: relative;
+  }
+  .searchbar input {
+    width: 110px;
+  }
+  .searchbar button {
+    width: 20px;
+    height: auto;
+    margin: 0 0 10px 0;
   }
   .nav-links {
     position: fixed;
@@ -164,18 +171,37 @@ nav .fa {
   nav .fa {
     display: block;
     color: #fff;
-    margin: 10px;
+    margin: 30px;
     font-size: 22px;
     cursor: pointer;
   }
   .nav-links ul {
     padding: 30px;
   }
-  .sub-header h1 {
-    padding-top: 10px;
+  .text-box h1 {
+    font-size: 30px;
+  }
+  section .samsung-explore-box h1 {
+    font-size: 30px;
+  }
+  section .rog-explore-box h1 {
+    font-size: 30px;
+  }
+  section .row {
+    display: block;
+  }
+  section .about-col a {
+    margin-left: 35%;
+  }
+  section .about-col-image img {
+    width: 90%;
+    margin: 60px 0 0 30px;
+    border-radius: 10px;
+  }
+  section .test-image {
+    position: relative;
   }
 }
-
 /*---------------------------Samsung-------------------------*/
 
 .Samsung {
@@ -294,33 +320,52 @@ nav .fa {
 /*--------------------------About Page---------------------*/
 
 .about-us {
-  width: 90%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 5s ease infinite;
+  height: auto;
+  width: 100%;
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
 }
-.about-col {
-  float: left;
-  padding: 30px 2px;
-  width: 48%;
-  display: table;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.about-col img {
+.row {
   width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3%;
+}
+.about-col-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  padding: 0 0 0 0;
 }
 .about-col h1 {
-  padding-top: 0;
+  padding: 0 0 20px 50px;
 }
 .about-col p {
-  padding: 15px 0 25px;
+  padding: 15px 0 45px 50px;
 }
 .hero-btn {
   border: 1px solid #f44336;
+  border-radius: 10px;
   padding: 10px 20px;
   margin-left: 150px;
   text-decoration: none;
   background: transparent;
-  color: #f44336;
+  color: #fff;
 }
 .hero-btn:hover {
   color: #fff;
@@ -328,7 +373,8 @@ nav .fa {
   transition: 0.3s;
 }
 .test img {
-  width: 100%;
+  width: 90%;
+  height: auto;
 }
 
 /**----------------------------Contact Page----------------------------**/
@@ -376,28 +422,42 @@ nav .fa {
   width: 100%;
   text-align: center;
   padding: 30px 0px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 .footer-content {
-  text-align: center;
+  display: block;
+}
+.company-policies {
   width: 100%;
-  padding: 20px 0;
 }
-.footer ul li {
+.company-policies a,
+.company-policies div {
   display: inline-block;
-}
-.footer ul li a {
   text-decoration: none;
+  margin: 1%;
+}
+.company-policies div {
+  background: #804eaf;
+  width: 3px;
+  height: 20px;
+  vertical-align: middle;
 }
 .footer h4 {
+  font-size: 25px;
   margin-bottom: 5px;
   margin-top: 20px;
   font-weight: 600;
 }
 .social .fa {
+  width: auto;
+  height: auto;
   color: #f44336;
-  margin: 0 13px;
+  margin: 10px 25px 20px 25px;
   cursor: pointer;
-  padding: 18px 0;
 }
 .fa-heart-o {
   color: #f44336;
