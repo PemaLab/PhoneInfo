@@ -136,7 +136,7 @@ nav .fa {
       rgba(118, 128, 161, 0.7),
       rgba(119, 127, 157, 0.7)
     ),
-    url(/images/samsung.jpeg);
+    url(/PhoneInfo/images/samsung.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -184,7 +184,7 @@ nav .fa {
       rgba(118, 128, 161, 0.7),
       rgba(119, 127, 157, 0.7)
     ),
-    url(/images/ROGPhone3.jpeg);
+    url(/PhoneInfo/images/ROGPhone3.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -232,7 +232,7 @@ nav .fa {
       rgba(118, 128, 161, 0.7),
       rgba(119, 127, 157, 0.7)
     ),
-    url(/images/about.png);
+    url(/PhoneInfo/images/about.png);
   background-position: center;
   background-size: cover;
   color: #fff;
